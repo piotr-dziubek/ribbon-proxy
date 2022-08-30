@@ -5,7 +5,7 @@ import {createProxyMiddleware} from "http-proxy-middleware";
 
 
 const app: Express = express();
-const port = 3005;
+const port = process.env.PORT || 5000;
 
 app.use(morgan("dev"));
 app.use(cors());
